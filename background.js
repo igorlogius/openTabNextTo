@@ -5,7 +5,7 @@ const extname = manifest.name;
 
 browser.menus.create({
   id: extname,
-  title: "Open new Tab next to current",
+  title: "Open new tab next to current",
   contexts: ["tab"]
 });
 
