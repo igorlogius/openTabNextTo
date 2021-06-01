@@ -2,7 +2,7 @@
 //const temporary = browser.runtime.id.endsWith('@temporary-addon'); // debugging?
 const manifest = browser.runtime.getManifest();
 const extname = manifest.name;
-const menu_title = "Open new tab beside"
+const menu_title = "Open tab next to"
 
 browser.menus.create({
   id: extname,
@@ -11,7 +11,7 @@ browser.menus.create({
 });
 
 browser.menus.onClicked.addListener((info, tab) => {
-	if (info.menuItemId == extname) {
+	if (info.menuItemId === extname) {
 		browser.tabs.create({
 			index: (tab.index + 1)
 		});

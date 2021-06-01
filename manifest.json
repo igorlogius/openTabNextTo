@@ -5,11 +5,11 @@
       "background.js"
     ]
   },
-  "description": "",
+  "description": "adds a tabs context menu entry to open a new tab next to one which was clicked on",
   "manifest_version": 2,
-  "name": "openTabNextToCurrent",
+  "name": "openTabNextTo",
   "permissions": [
       "menus"
   ],
-  "version": "0.1.2"
+  "version": "0.1.3"
 }
